@@ -121,7 +121,7 @@ namespace ChuyenDoi
                 e.Handled = true;
             }
             // Chặn trường hợp nhập dấu âm sau dấu chấm
-            if (e.KeyChar == '.' && textValue.Text.Contains('-'))
+            if (e.KeyChar == '.' && textValue.Text.Contains('-') && textValue.SelectionStart == 1)
             {
                 e.Handled = true;
             }
